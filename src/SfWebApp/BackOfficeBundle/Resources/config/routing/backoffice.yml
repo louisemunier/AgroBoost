@@ -1,5 +1,5 @@
 sf_web_app_backofficebundle_home:
     pattern: /
-    defaults: { _controller: "SfWebAppBackOfficeBundle:Default:index" }
+    defaults: { _controller: "SfWebAppBackOfficeBundle:Default:login.html.twig" }
     requirements:
         _method: GET

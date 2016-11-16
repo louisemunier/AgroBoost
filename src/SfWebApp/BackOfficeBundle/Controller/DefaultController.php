@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('SfWebAppBackOfficeBundle:Default:index.html.twig');
+        return $this->render('SfWebAppBackOfficeBundle:Default:login.html.twig');
     }
 }
