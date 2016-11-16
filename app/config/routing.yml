@@ -1,6 +1,6 @@
 sf_web_app_cms:
     resource: "@SfWebAppCmsBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /cms
 
 sf_web_app_front_office:
     resource: "@SfWebAppFrontOfficeBundle/Resources/config/routing.yml"
@@ -12,7 +12,7 @@ sf_web_app_back_office:
 
 sf_web_app_main:
     resource: "@SfWebAppMainBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /main
 
 
 # FOS USER BUNDLE ROUTES
