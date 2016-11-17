@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>Accueil</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+
+    <link href="Style.CSS" type="text/css" rel="stylesheet" />
+    <link href="css/homepage.css" type="text/css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="{{ asset('css/fiche.css')}}" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav>
+    <div class='container-fluid'>
+        {# <img src="{{ asset('images/download.jpg')}}" alt="image"/>#}
+        <div  id='icon'>AgroBoost</div>
+        <ul class="menu">
+            <li>
+                <a href='#'>A propos</a>
+            </li>
+            <li>
+                <a href='#'>Acteurs</a>
+            </li>
+            <li>
+                <a href='#'>Solutions et Services</a>
+            </li>
+            <li>
+                <a href='#'>Forum</a>
+            </li>
+            <li>
+                <a href='#'>Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<header>
+    <div class='container-fluid'>
+        <h1>WE'RE CREATIVE DESIGNER</h1>
+    </div>
+</header>
+<div id='nav-bg'></div>
+<section id='fiche'>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-5 texte_fiche">
+                <div class="row">
+                    <img class="image-responsive logo_agroboost" src="{{ asset('images/agroboost1.png') }}"/>
+                    <h3 class="catchline">Catch-line de BoostAgri</h3>
+                </div>
+
+                <div class="row">
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/tag.png') }}"/>
+                    <p class="para col-xs-4">tag</p>
+
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/pin.png') }}"/>
+                    <p class="para col-xs-4">Ville</p>
+
+                </div>
+
+                <div class="row">
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/coupe.png') }}"/>
+                    <p class="para col-xs-4">Palmares :</p>
+                </div>
+
+                <div class="col-xs-12">
+                        <ul class="liste_profil">
+                            <li>2ème prix Statup Weekend Orléans 2016</li>
+                            <li>Gagnant Agrickathon Orléans 2016</li>
+                        </ul>
+                    </div>
+                <button type="button" class="btn btn-default btn_diagn" aria-label="Left Align">Mon diagnostique</button>
+                </div>
+
+            {#images à droite#}
+            <div class="col-xs-7 image_fiche">
+                <img class="image-responsive img_champs" src="{{ asset('images/8.png') }}" alt="champs"/>
+            </div>
+
+        </div>
+    </div>
+
+    {#Rubrique a propos#}
+    <div class="row">
+        <div class="col-md-6">
+            <h2>A propos</h2>
+            <p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
+            <div class="button text-center"><button type="button" class="btn btn-danger">S'incrire</button></div>
+        </div>
+    </div>
+
+
+
+</section>
+
+</body>
+
+<script>
+    var header = $('header');
+    var range = 200;
+
+    $(window).on('scroll', function () {
+
+        var scrollTop = $(this).scrollTop();
+        var offset = header.offset().top;
+        var height = header.outerHeight();
+        offset = offset + height / 2;
+        var calc = 1 - (scrollTop - offset + range) / range;
+
+        header.css({ 'opacity': calc });
+
+        if ( calc > '1' ) {
+            header.css({ 'opacity': 1 });
+        } else if ( calc < '0' ) {
+            header.css({ 'opacity': 0 });
+        }
+
+    });
+
+
+    $('.content__head').click(function(){
+        $(this).toggleClass('open');
+
+        $(this).parent().find('.content__body').slideToggle('fast');
+
+    });
+</script>
+
+</html>
+
+
+
+
+

@@ -1,3 +1,7 @@
 sf_web_app_cms_homepage:
     path:     /
     defaults: { _controller: SfWebAppCmsBundle:Default:index }
+
+sf_web_app_cms_fichepage:
+    path:     /fiche
+    defaults: { _controller: SfWebAppCmsBundle:Default:fiche }
