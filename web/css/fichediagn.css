@@ -25,3 +25,6 @@
     text-align: center;
 }
 
+nav a:hover {
+    color: lawngreen;
+}
