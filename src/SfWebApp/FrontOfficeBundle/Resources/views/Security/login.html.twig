@@ -11,17 +11,17 @@
 
                 </div>
                 <div class="column-02">
-                    <h1></h1>
-                    <p>Espace client</p>
+                    <h1>Espace membre</h1>
+
                 </div>
             </div>
             <form action="{{ path("fos_user_security_check") }}" method="post" class="center-block">
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
                 <div class="form-group">
-                    <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required"/>
+                    <input type="text" class="form-control" placeholder="identifiant" id="username" name="_username" value="{{ last_username }}" required="required"/>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" name="_password" required="required"/>
+                    <input type="password" class="form-control" placeholder="mot de passe" id="password" name="_password" required="required"/>
                 </div>
                 <div class="form-group">
                     <input type="checkbox" id="remember_me" name="_remember_me" value="on" />

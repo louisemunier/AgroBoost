@@ -15,4 +15,9 @@ class DefaultController extends Controller
     {
         return $this->render('SfWebAppCmsBundle:Default:fiche.html.twig');
     }
+
+    public function acteursAction()
+    {
+        return $this->render('SfWebAppCmsBundle:Default:acteurs.html.twig');
+    }
 }

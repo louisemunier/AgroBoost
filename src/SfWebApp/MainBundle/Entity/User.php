@@ -94,6 +94,35 @@ class User extends BaseUser
      */
     protected $phone;
 
+
+    /**
+     * @var
+     *
+     * @ORM\Column(name="status", type="string", length=255, nullable=true)
+     */
+    protected $status;
+
+    
+
+    /**
+     * @var
+     *
+     * @ORM\Column(name="nomEntreprise", type="string", length=255, nullable=true)
+     */
+    protected $nomEntreprise;
+    /**
+     * @var
+     *
+     * @ORM\Column(name="catchLine", type="string", length=255, nullable=true)
+     */
+    protected $catchLine;
+    /**
+     * @var
+     *
+     * @ORM\Column(name="presentation", type="string", length=255, nullable=true)
+     */
+    protected $presentation;
+
     /**
      * Constructor
      */
@@ -278,5 +307,101 @@ class User extends BaseUser
     public function getGroups()
     {
         return $this->groups;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     *
+     * @return User
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set nomEntreprise
+     *
+     * @param string $nomEntreprise
+     *
+     * @return User
+     */
+    public function setNomEntreprise($nomEntreprise)
+    {
+        $this->nomEntreprise = $nomEntreprise;
+
+        return $this;
+    }
+
+    /**
+     * Get nomEntreprise
+     *
+     * @return string
+     */
+    public function getNomEntreprise()
+    {
+        return $this->nomEntreprise;
+    }
+
+    /**
+     * Set catchLine
+     *
+     * @param string $catchLine
+     *
+     * @return User
+     */
+    public function setCatchLine($catchLine)
+    {
+        $this->catchLine = $catchLine;
+
+        return $this;
+    }
+
+    /**
+     * Get catchLine
+     *
+     * @return string
+     */
+    public function getCatchLine()
+    {
+        return $this->catchLine;
+    }
+
+    /**
+     * Set presentation
+     *
+     * @param string $presentation
+     *
+     * @return User
+     */
+    public function setPresentation($presentation)
+    {
+        $this->presentation = $presentation;
+
+        return $this;
+    }
+
+    /**
+     * Get presentation
+     *
+     * @return string
+     */
+    public function getPresentation()
+    {
+        return $this->presentation;
     }
 }

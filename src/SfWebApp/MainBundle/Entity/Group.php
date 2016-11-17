@@ -69,4 +69,14 @@ class Group extends BaseGroup
     {
         return $this->users;
     }
+
+    /**
+     * Remove user
+     *
+     * @param \SfWebApp\MainBundle\Entity\User $user
+     */
+    public function removeUser(\SfWebApp\MainBundle\Entity\User $user)
+    {
+        $this->users->removeElement($user);
+    }
 }
