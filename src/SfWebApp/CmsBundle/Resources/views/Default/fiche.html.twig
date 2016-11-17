@@ -9,7 +9,7 @@
     <link href="css/homepage.css" type="text/css" rel="stylesheet" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="{{ asset('css/homepage.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/fiche.css')}}" rel="stylesheet">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -21,8 +21,8 @@
 <nav>
     <div class='container-fluid'>
         {# <img src="{{ asset('images/download.jpg')}}" alt="image"/>#}
-        <div  id='icon'>AGRI_STARTUP</div>
-        <ul>
+        <div  id='icon'>AgroBoost</div>
+        <ul class="menu">
             <li>
                 <a href='#'>A propos</a>
             </li>
@@ -52,17 +52,43 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-5 texte_fiche">
-                <h2>BoostAgri</h2>
+                <div class="row">
+                    <img class="image-responsive logo_agroboost" src="{{ asset('images/agroboost1.png') }}"/>
+                    <h3 class="catchline">Catch-line de BoostAgri</h3>
+                </div>
 
-            </div>
+                <div class="row">
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/tag.png') }}"/>
+                    <p class="para col-xs-4">tag</p>
 
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/pin.png') }}"/>
+                    <p class="para col-xs-4">Ville</p>
+
+                </div>
+
+                <div class="row">
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/coupe.png') }}"/>
+                    <p class="para col-xs-4">Palmares :</p>
+                </div>
+
+                <div class="col-xs-12">
+                        <ul class="liste_profil">
+                            <li>2ème prix Statup Weekend Orléans 2016</li>
+                            <li>Gagnant Agrickathon Orléans 2016</li>
+                        </ul>
+                    </div>
+                <button type="button" class="btn btn-default btn_diagn" aria-label="Left Align">Mon diagnostique</button>
+                </div>
+
+
+
+            {#images à droite#}
             <div class="col-xs-7 image_fiche">
-
+                <img class="image-responsive img_champs" src="{{ asset('images/8.png') }}" alt="champs"/>
             </div>
+
         </div>
     </div>
-
-
 
 
 </section>
