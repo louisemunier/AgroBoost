@@ -56,8 +56,8 @@ nav a {
     text-decoration: none;
     transition: all .3s;
 }
-nav a:hover {
-    color: #DDD;
+nav a:hover{
+    color: lawngreen;
 }
 
 #icon {
