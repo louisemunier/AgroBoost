@@ -21,10 +21,10 @@
 <nav>
     <div class='container-fluid'>
        {# <img src="{{ asset('images/download.jpg')}}" alt="image"/>#}
-            <div  id='icon'>AGRI_STARTUP</div>
+            <div  id='icon'><img class="img-responsive" style="height: 100px;" src="{{ asset('images/agroboost.png')}}" alt="image facilateur"/></div>
             <ul>
                 <li>
-                    <a href='#'>A propos</a>
+                    <a href='#'>À propos</a>
                 </li>
                 <li>
                     <a href='#'>Acteurs</a>
@@ -51,38 +51,82 @@
     <div class='container content'>
         <div class="row">
             <div class="col-md-6">
-                <h2>A propos</h2>
-                <p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
-                <div class="button text-center"><button type="button" class="btn btn-danger">S'incrire</button></div>
+                <h2>À propos</h2>
+                <p>Agroboost est LA market place de l’écosystème agricole et agroalimentaire. Ici la startup trouvera tous ce dont elle a besoin pour booster son développement. Agroboost accompagne les startups de cet écosystème : professionnalisation du discours, identification des avantages concurrentiel, réalisation de business plan, mise en relation ciblé avec les différents acteurs de l’écosystème… Agroboost permet aux entreprises, facilitateurs et incubateurs de proposer leurs services et de travailler avec les startups sur certains projets.  </p>
+                <p>Boostons ensemble notre écosystème, rejoignez nous !   </p>
+                <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="gridModalLabel">Inscription</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid bd-example-row">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <label for="Entreprise"></label>
+                                            <input type="text" class="form-control" id="email" placeholder="NOM DE L'ENTREPRISE">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <label for="Email"></label>
+                                            <input type="text" class="form-control" id="email" placeholder="E-MAIL">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <label for="Status"></label>
+                                            <input type="text" class="form-control" id="email" placeholder="STATUS">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <label for="Password"></label>
+                                            <input type="password" class="form-control" id="password" placeholder="MOT DE PASSE">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-primary center-block">S'enregistrer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bd-example bd-example-padded-bottom">
+                    <button type="button" class="btn btn-danger center-block" data-toggle="modal" data-target="#gridSystemModal">
+                        S'inscrire
+                    </button>
+                </div>
+
             </div>
             <div class="col-md-6 content2">
                 <section class="content">
                     <div class="content__head"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        Unique Design</div>
+                        Inscription</div>
                     <div class="content__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sequi eveniet eos quae rerum cupiditate non in dignissimos </p>
+                        <p> Simple et rapide</p>
                     </div>
                 </section>
                 <section class="content">
                     <div class="content__head"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        collapse head</div>
+                        Profil type Linkedin</div>
                     <div class="content__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sequi eveniet eos quae rerum cupiditate non in dignissimos</p>
+                        <p> À remplir à la carte respectant un grille de présentation connue de tous !</p>
                     </div>
                 </section>
                 <section class="content">
                     <div class="content__head"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                             </i>
-                        collapse head</div>
+                        Un accompagnement des startups</div>
                     <div class="content__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sequi eveniet eos quae rerum cupiditate non in dignissimos </p>
+                        <p>Leur permet de se poser les bonnes question ! </p>
                     </div>
                 </section>
                 <section class="content">
                     <div class="content__head"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        collapse head</div>
+                        Mises en relation</div>
                     <div class="content__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sequi eveniet eos quae rerum cupiditate non in dignissimos corporis </p>
+                        <p>Orientées par correspondance du profil des acteurs.</p>
                     </div>
                 </section>
             </div>
@@ -90,83 +134,42 @@
     </div>
     <div class="container-fluid acteurs">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="cercle">
-                            <img src="{{ asset('images/1.png')}}" alt="image facilateur"/>
-                            <h3>ENTREPRISE</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  consectetur adipisicing elit. Quasi sequi eveniet eos quae </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="cercle">
-                            <img src="{{ asset('images/2.png')}}" alt="image facilateur"/>
-                            <h3>STARTUP</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  consectetur adipisicing elit. Quasi sequi eveniet eos quae </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="cercle">
-                            <img src="{{ asset('images/3.png')}}" alt="image facilateur"/><h3>INCUBATEUR</h3>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  consectetur adipisicing elit. Quasi sequi eveniet eos quae </p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="cercle">
-                            <img src="{{ asset('images/4.png')}}" alt="image facilateur"/>
-                            <h3>FACILITATEUR</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  consectetur adipisicing elit. Quasi sequi eveniet eos quae </p>
-                    </div>
-                </div>
-            </div>
+            <div class="col-sm-12"> <img class="img-responsive" src="{{ asset('images/forces.png')}}" alt="image facilateur"/></div>
         </div>
     </div>
     <div class="container agenda">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-center">AGENDA</h2>
-                <p class="text-center">Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
+                <h2 class="text-responsive">AGENDA</h2>
+                <div class="trait"></div>
+                <p class="text-responsive">Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
 
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid carousel">
         <div class="row">
-            <div class="col-sm-12"> <img class="text-center" src="{{ asset('images/carousel.png')}}" alt="image facilateur"/></div>
+            <div class="col-sm-12"> <img class="img-responsive" src="{{ asset('images/carousel.png')}}" alt="image facilateur"/></div>
 
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid chiffre">
         <div class="row">
-            <div class="col-sm-3">
-                <p>3468</p>
-                <p>Projets Finished</p>
+            <div class="col-sm-4">
+                <h4>+37% </h4>
+                <div class="trait"></div>
+                <p>Croissance du chiffre d’affaires des startups françaises du numérique sur la période 2013-2014</p>
             </div>
-            <div class="col-sm-3">
-                <p>4638</p>
-                <p>Happy Clients</p></div>
-            <div class="col-sm-3">
-                <p>3468</p>
-                <p>Hours of work</p>
+            <div class="col-sm-4">
+                <h4>4638</h4>
+                <div class="trait"></div>
+                <p>La première cause d’échec des startups c’est de ne pas cibler un «besoin du marché ».</p></div>
+            <div class="col-sm-4">
+                <h4>+ 110%</h4>
+                <div class="trait"></div>
+                <p>Augmentation de l’utilisation des applis professionnelles par les agriculteurs </p>
             </div>
-            <div class="col-sm-3">
-                <p>3468</p>
-                <p>Cup of coffee</p>
-            </div>
+
 
 
         </div>
