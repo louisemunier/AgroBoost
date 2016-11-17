@@ -122,6 +122,7 @@ header h1 {
 .content__body{
     border: 1px solid #B3CBCB;
     margin: 10px;
+    font-style: italic;
 
 }
 .trait{
@@ -178,13 +179,20 @@ header h1 {
 }
 
 .form-control{
-    border: 0px ;
+    border: transparent ;
 }
 .modal-dialog{
     border-radius: 0px;
+    height: 80% !important;
+    padding-top:10%;
 
 }
+.btn-primary{
+    color: #33333B;
+    background: transparent;
+    border-color: #33333B;
 
+}
 .acteurs{
     border-top: 1px;
     border-bottom: 1px;
