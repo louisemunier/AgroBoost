@@ -166,7 +166,7 @@ header h1 {
 }
 
 .trait{
-    width: 40px;
+    width: 60px;
     margin: 0 auto;
     margin-bottom: 15px;
     padding-bottom: 5px;
@@ -209,4 +209,44 @@ header h1 {
 .pourquoi {
     margin-top: 30px;
     text-align: justify;
+    margin-bottom: 60px;
+}
+
+.pourquoi h2 {
+    text-align: left;
+}
+
+.trait2 {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+    border-bottom-width: medium;
+    margin-left: 0px;
+
+}
+
+.photo_eq {
+    width: 300px;
+    margin-top: 60px;
+
+}
+
+.photos_equipes {
+    margin-bottom: 60px;
+}
+
+.logo_atouts {
+    width: 100px
+}
+
+.footer {
+    background-color: #333333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.news_title {
+    color: white;
 }
