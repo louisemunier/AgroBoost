@@ -100,6 +100,7 @@ header h1 {
     background: white;
     height: auto;
     padding: 5em 0;
+    padding-bottom: 0px;
 }
 
 #fiche p {
@@ -111,6 +112,7 @@ header h1 {
 
 .logo_agroboost {
     text-align: center;
+    width:500px;
 }
 
 .img_champs {
@@ -250,3 +252,34 @@ header h1 {
 .news_title {
     color: white;
 }
+
+.input_submit {
+    background-color: #F84345;
+    border: 1px solid #F84345;
+    width: 1000px;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+.input_submit:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #F84345;
+    text-align: center;
+}
+
+.input_email {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    width: 1000px;
+    height: 50px;
+    color: grey;
+    text-align: center;
+}
+
+.form_foot {
+    margin-top: 100px;
+}
+
