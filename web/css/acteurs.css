@@ -84,8 +84,8 @@ header {
     padding: 10em 0 8em;
     z-index: 2;
     color: white;
-    /* background-image: url("../images/download.jpg");
-     background-size: 100%;*/
+    background-image: url("../images/champs.jpg");
+     background-size: 100%;
 }
 header h1 {
     font-size: 4em;
@@ -106,12 +106,12 @@ header h1 {
     margin: 0;
     color: grey;
 }
-
-
-
-
-h1 {
+.label{
+    padding: 50px;
+}
+h2 {
     text-align:center;
+    padding-bottom: 100px;
 }
 .container {
     width:100%;
@@ -133,7 +133,7 @@ label {
     cursor:pointer;
 }
 input[type="radio"][id="blue"]:checked + label {
-    background:#6666ff;
+    background:#00BCD4;
 }
 input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
     width:0;
@@ -143,7 +143,10 @@ input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:ch
     opacity:0;
 }
 input[type="radio"][id="red"]:checked + label {
-    background:#ff4466;
+    background:#e54b4b;
+}
+input[type="radio"][id="reset"]:checked + label {
+    background:#4CAF50;
 }
 input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
     width:0;
@@ -153,7 +156,7 @@ input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:che
     opacity:0;
 }
 input[type="radio"][id="green"]:checked + label {
-    background:#66dd99;
+    background:#FFA000;
 }
 input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
     width:0;
@@ -201,24 +204,6 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
     background: cadetblue;
     position: absolute;
     animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
-}
-
-.badgescard {
-    padding: 10px 20px;
-    border-radius: 3px;
-    background-color: #ECECEC;
-    width: 480px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    z-index: -1;
-    left: 10px;
-    bottom: 10px;
-    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
-}
-.badgescard span {
-    font-size: 1.6em;
-    margin: 0px 6px;
-    opacity: 0.6;
 }
 
 .firstinfo {
@@ -281,8 +266,15 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
     }
 }
 
+.btn:hover{
+    color: #0F90FF;
+}
 
+.btn {
+   font-size: 25px;
+}
 
-.glyphicon-thumbs-up:visited {
-    background-color: yellow;
+.fa-info-circle {
+   color: red;
+
 }
