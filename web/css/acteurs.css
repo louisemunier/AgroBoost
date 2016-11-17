@@ -265,11 +265,9 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
         left: -78px;
     }
 }
-
-.btn:hover{
-    color: #0F90FF;
+nav a:hover{
+    color: lawngreen;
 }
-
 .btn {
    font-size: 25px;
 }
@@ -282,7 +280,3 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
     width: 100%;
 }
 
-.btn_diagn:hover  {
-    color: #F84345;
-    background-color: white;
-}
