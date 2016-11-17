@@ -20,7 +20,7 @@ class DefaultController extends Controller
     public function ficheDiagnAction()
     {
         return $this->render('SfWebAppCmsBundle:Default:fichediagn.html.twig');
-
+    }
     public function acteursAction()
     {
         return $this->render('SfWebAppCmsBundle:Default:acteurs.html.twig');
