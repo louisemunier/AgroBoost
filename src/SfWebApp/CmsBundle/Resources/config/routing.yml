@@ -5,3 +5,7 @@ sf_web_app_cms_homepage:
 sf_web_app_cms_fichepage:
     path:     /fiche
     defaults: { _controller: SfWebAppCmsBundle:Default:fiche }
+
+sf_web_app_cms_fichepagediagno:
+    path:     /diagno
+    defaults: { _controller: SfWebAppCmsBundle:Default:fichediagn }

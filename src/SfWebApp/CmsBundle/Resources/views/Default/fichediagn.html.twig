@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <title>Accueil</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+
+    <link href="Style.CSS" type="text/css" rel="stylesheet" />
+    <link href="css/homepage.css" type="text/css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="{{ asset('css/fiche.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/fichediagn.css')}}" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav>
+    <div class='container-fluid'>
+        {# <img src="{{ asset('images/download.jpg')}}" alt="image"/>#}
+        <div  id='icon'>AgroBoost</div>
+        <ul class="menu">
+            <li>
+                <a href='#'>A propos</a>
+            </li>
+            <li>
+                <a href='#'>Acteurs</a>
+            </li>
+            <li>
+                <a href='#'>Solutions et Services</a>
+            </li>
+            <li>
+                <a href='#'>Forum</a>
+            </li>
+            <li>
+                <a href='#'>Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<header>
+    <div class='container-fluid'>
+        <h1>WE'RE CREATIVE DESIGNER</h1>
+    </div>
+</header>
+<div id='nav-bg'></div>
+<section id='fiche'>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 texte_fiche">
+                <div class="row">
+                    <img class="image-responsive logo_agroboost" src="{{ asset('images/logo.png') }}"/>
+                    <h3 class="catchline">Catch-line de BoostAgri</h3>
+                </div>
+
+                <div class="row">
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/tag.png') }}"/>
+                    <p class="para col-xs-4">tag</p>
+
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/pin.png') }}"/>
+                    <p class="para col-xs-4">Orléans</p>
+
+                </div>
+
+                <div class="row">
+                    <img class="col-xs-1 image-responsive glyph_profil" src="{{ asset('images/coupe.png') }}"/>
+                    <p class="para col-xs-4">Palmarès :</p>
+                </div>
+
+                <div class="col-xs-12">
+                    <ul class="liste_profil">
+                        <li>2ème prix Statup Weekend Orléans 2016</li>
+                        <li>Gagnant Agrickathon Orléans 2016</li>
+                    </ul>
+                </div>
+            </div>
+
+            {#images à droite#}
+            <div class="col-xs-6 image_fiche">
+                <img class="image-responsive img_champs" src="{{ asset('images/jhvij.jpg') }}" alt="champs"/>
+            </div>
+
+        </div>
+    </div>
+
+    {#Rubrique diagnostic#}
+    <div class="row">
+        <div class="col-xs-5 col-xs-offset-1 diagnostic">
+            <h2>DIAGNOSTIC</h2>
+            <div class="trait"></div>
+            <p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
+        </div>
+
+        <div class="col-xs-6 infos">
+            <ul class="liste_infos">
+                <li>Responsabilités Sociétale :</li>
+                <p class="retrait_para">Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac</p>
+
+                <li>Responsabilité Environnementale:</li>
+                <p class="retrait_para">Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac</p>
+
+                <li>Cible :</li>
+                <p class="retrait_para">BtoC</p>
+
+                <li>Secteur d'activité :</li>
+                <p class="retrait_para">Distribution circuits courts.</p>
+
+                <li>Sous secteur d'activité :</li>
+                <p class="retrait_para">Produit Alimentaires</p>
+            </ul>
+        </div>
+    </div>
+
+    {#Rubrique Valeur Porteur#}
+    <div class="row">
+        <div class="col-xs-5 col-xs-offset-1 diagnostic">
+            <h2>VALEUR DE PORTEUR</h2>
+            <div class="trait"></div>
+            <p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
+        </div>
+
+        <div class="col-xs-6 infos2">
+            <img class="image-responsive spider" src="{{ asset('images/spider.jpg') }}"/>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 business">
+                <h2>MON BUSINESS PLAN</h2>
+                <div class="trait"></div>
+                <p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. Qui pro muro tuetur accolas circumfusus collium tardius evadebant. Qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. </p>
+            </div>
+
+            <div class="col-xs-1"></div>
+        </div>
+
+        <div>
+            <div class="col-xs-10 col-xs-offset-1">
+                <img class="image-responsive" src="{{ asset('images/BUSINESSPLAN.jpg') }}"/>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+
+    {#Footer#}
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-xs-5 text_foot">
+                <h2 class="news_title">AGROBOOST</h2>
+                
+                <div class="trait"></div>
+                <p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant.</p>
+            </div>
+
+            <div class="col-xs-7 form_foot">
+                <div class="col-xs-12">
+                    <input type="email" class="input_email" placeholder="EMAIL">
+                </div>
+
+                <div class="col-xs-12">
+                    <input type="submit" class="input_submit" value="S'abonner à la Newsletter">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script>
+    var header = $('header');
+    var range = 200;
+
+    $(window).on('scroll', function () {
+
+        var scrollTop = $(this).scrollTop();
+        var offset = header.offset().top;
+        var height = header.outerHeight();
+        offset = offset + height / 2;
+        var calc = 1 - (scrollTop - offset + range) / range;
+
+        header.css({ 'opacity': calc });
+
+        if ( calc > '1' ) {
+            header.css({ 'opacity': 1 });
+        } else if ( calc < '0' ) {
+            header.css({ 'opacity': 0 });
+        }
+
+    });
+
+
+    $('.content__head').click(function(){
+        $(this).toggleClass('open');
+
+        $(this).parent().find('.content__body').slideToggle('fast');
+
+    });
+</script>
+
+</html>
+
+
+
+
+
