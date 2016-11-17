@@ -9,3 +9,8 @@ sf_web_app_cms_fichepage:
 sf_web_app_cms_fichepagediagno:
     path:     /diagno
     defaults: { _controller: SfWebAppCmsBundle:Default:fichediagn }
+
+sf_web_app_cms_acteurspage:
+    path:     /acteurs
+    defaults: { _controller: SfWebAppCmsBundle:Default:acteurs }
+

@@ -7,12 +7,14 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use FOS\UserBundle\Model\UserInterface;
 
+
 class ProfileController extends BaseController
 {
 
     protected $container;
 
     /**
+
      * @return ContainerInterface
      */
     public function getContainer()

@@ -179,10 +179,8 @@ header h1 {
 }
 
 .form-control{
-    border-bottom: 1px solid;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
+    border: none;
+
 }
 .modal-dialog{
     border-radius: 0px;
